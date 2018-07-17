@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-WORKDIR /tmp
-COPY *.jar .
+COPY app.jar /opt/app/
+WORKDIR /opt/app/
 EXPOSE 8080
-CMD [ "java", "-jar", "./demo.jar" ]
+CMD [ "java", "-jar", "/opt/app/app.jar" ]
