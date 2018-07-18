@@ -1,0 +1,4 @@
+[env]
+#jenkins
+dev    ansible_ssh_host=192.168.33.56 ansible_ssh_private_key_file=/home/vagrant/.ssh/dev_key
+qa     ansible_ssh_host=192.168.33.57 ansible_ssh_private_key_file=/home/vagrant/.ssh/qa_key
