@@ -12,8 +12,8 @@ sudo systemctl enable docker
 sudo usermod -aG docker ${USER}
 
 
-#Install Java
-sudo apt-get install openjdk-8-jdk > /dev/null 2>&1
+#Install Python
+sudo apt-get install -y python > /dev/null 2>&1
 
 # Docker Compose
 
