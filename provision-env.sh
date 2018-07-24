@@ -15,6 +15,7 @@ sudo usermod -aG docker ${USER}
 #Install Python
 sudo apt-get install -y python > /dev/null 2>&1
 
+
 # Docker Compose
 
 echo "Installing Docker Compose"

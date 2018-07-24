@@ -8,7 +8,9 @@ sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get -y install openjdk-8-jdk > /dev/null 2>&1
 sudo apt-get -y install jenkins > /dev/null 2>&1
-sudo systemctl start jenkins 
+sudo systemctl start jenkins
+sudo usermod -aG jenkins vagrant
+sudo usermod -aG vagrant jenkins
 
 
 # Docker
