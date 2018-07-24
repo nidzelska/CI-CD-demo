@@ -1,4 +1,9 @@
+[all:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_user=vagrant
+ansible_connection=ssh
+ansible_port=22
+
 [env]
-#jenkins
-dev    ansible_ssh_host=192.168.33.56 ansible_ssh_private_key_file=/home/vagrant/.ssh/dev_key
-qa     ansible_ssh_host=192.168.33.57 ansible_ssh_private_key_file=/home/vagrant/.ssh/qa_key
+dev    ansible_ssh_host=192.168.33.56 ansible_ssh_private_key_file=/dev_key
+qa     ansible_ssh_host=192.168.33.57 ansible_ssh_private_key_file=/qa_key
